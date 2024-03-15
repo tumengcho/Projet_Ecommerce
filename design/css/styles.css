@@ -1,0 +1,41 @@
+.logo {
+  transform: scale(1);
+}
+
+.menu-item {
+  font-size: 15px;
+  color: white;
+  font-size: medium;
+  margin: 0% 22px 0 22px;
+}
+
+nav {
+  height: 150px;
+  background-color: black;
+}
+
+section {
+  height: 900px;
+  background-color: black;
+}
+
+.s-top {
+  height: 110vh;
+}
+.s-top img {
+  height: 110vh;
+  width: 90%;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: -7%;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.589);
+}
