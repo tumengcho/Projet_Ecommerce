@@ -8,6 +8,7 @@
   font-family: AmikoSemiBold;
   src: url("fonts/Amiko/Amiko-SemiBold.ttf");
   font-weight:bold;
+
 }
 
 @font-face {
@@ -16,11 +17,29 @@
   font-weight: bolder;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  margin:0 3px 0 3px ;
+}
+
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
 * {
   font-family: Amiko;
 }
 
 body{
+  overflow-x: hidden;
   padding: 0 150px 0 150px;
   background-color: black;
 }
@@ -35,12 +54,15 @@ body{
   background: linear-gradient(37deg, rgba(0,0,0,1) 70%, rgba(255,255,255,1) 150%);
 }
 .logo {
-  transform: scale(1);
+  transform: scale(.9);
+  cursor: pointer;
+  
 }
 
 .icon-section{
   width: 95px;
   height: 74px;
+  
 }
 
 .logo-section{
@@ -48,10 +70,27 @@ body{
 }
 
 .menu-item {
-  font-size: 15px;
+  font-size: 10px;
   color: white;
-  font-size: medium;
   margin: 0% 22px 0 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.product-shop{
+  height: 600px;
+  border: 3px solid white;
+  background-color: black;
+}
+
+.big-product-shop{
+  height: 900px;
+  border: 3px solid white;
+  background-color: black;
+}
+
+a:hover{
+color: white;
 }
 
 nav {
@@ -74,16 +113,165 @@ section {
   width: 90%;
 }
 
-.title {
-  font-family: AmikoBold;
+.big-title {
   font-size: 50px;
+  letter-spacing: -4.2px;
+  line-height: 80px;
   font-weight: normal;
-  color: white;
-  letter-spacing: -7%;
+  color: rgba(255, 255, 255, 0.945);
+  text-transform: uppercase;
+}
+
+
+
+.title {
+  font-size: 30px;
+  letter-spacing: -3px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.884);
   text-transform: uppercase;
 }
 
 .subtitle {
-  font-size: 23px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.589);
+}
+
+
+
+#content {
+  height: 50px;
+  width: 20px;
+  margin-left: 170px;
+  left: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#content.on {
+  -webkit-animation-name: in-out;
+  animation-name: in-out;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+input {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search {
+  background: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 100%;
+  outline: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 26px;
+  margin-left: 17px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.close:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  margin-top: -1px;
+  margin-left: -13px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: -1px;
+  margin-left: -13px;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.square {
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  width: 300px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+  transition-delay: 0.4s, 0s, 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
 }
