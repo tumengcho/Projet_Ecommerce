@@ -1,5 +1,19 @@
+body{
+  padding: 0 150px 0 150px;
+  background-color: black;
+}
+
 .logo {
   transform: scale(1);
+}
+
+.icon-section{
+  width: 95px;
+  height: 74px;
+}
+
+.logo-section{
+  height: 300px;
 }
 
 .menu-item {
@@ -17,11 +31,13 @@ nav {
 section {
   height: 900px;
   background-color: black;
+  min-height: fit-content;
 }
 
 .s-top {
   height: 110vh;
 }
+
 .s-top img {
   height: 110vh;
   width: 90%;
