@@ -1,8 +1,39 @@
+@font-face {
+  font-family: Amiko;
+  src: url("fonts/Amiko/Amiko-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AmikoSemiBold;
+  src: url("fonts/Amiko/Amiko-SemiBold.ttf");
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: AmikoBold;
+  src: url("fonts/Amiko/Amiko-Bold.ttf");
+  font-weight: bolder;
+}
+
+* {
+  font-family: Amiko;
+}
+
 body{
   padding: 0 150px 0 150px;
   background-color: black;
 }
 
+.fade-down{
+  background: rgb(0,0,0);
+  background: linear-gradient(144deg, rgba(0,0,0,1) 70%, rgba(255,255,255,1) 150%);
+}
+.fade-up{
+  height: 450px;
+  background: rgb(0,0,0);
+  background: linear-gradient(37deg, rgba(0,0,0,1) 70%, rgba(255,255,255,1) 150%);
+}
 .logo {
   transform: scale(1);
 }
@@ -44,9 +75,10 @@ section {
 }
 
 .title {
+  font-family: AmikoBold;
   font-size: 50px;
+  font-weight: normal;
   color: white;
-  font-weight: 400;
   letter-spacing: -7%;
   text-transform: uppercase;
 }
