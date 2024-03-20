@@ -43,15 +43,29 @@
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-snap-points-y: repeat(100vh);
+  scroll-behavior: smooth;
+}
+.main::-webkit-scrollbar {
+  width: 0px !important;
 }
 
-main > section {
+.main > section {
   height: 100vh;
   background: #eee;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
+#descrition-product{
+  position: absolute;
+  right: 0;
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 100%;
+  top: 0px; 
+  bottom: 0px;
+}
 
 body{
   overflow-x: hidden;
