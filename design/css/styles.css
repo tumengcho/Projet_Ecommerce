@@ -76,6 +76,15 @@
   text-align: center;
 
 }
+.cart-item{
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  background-color: #888;
+}
+.cart-item img{
+  width: 100px;
+  background: rgb(231, 231, 231);
+}
 
 #descrition-product{
   position: absolute;
