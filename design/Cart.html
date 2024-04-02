@@ -10,7 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    
+   
 <script src="jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -22,7 +22,7 @@
       <div class="d-flex justify-content-center align-items-center">
         <h1 class="menu-item my-auto">CONTACT</h1>
         <a class="menu-item my-auto" href="Cart.html">CART</a>
-
+ 
         <img src="images/logo.png" class="logo mx-3" />
         <a href="Shop.html" class="menu-item my-auto">SHOP</a>
         <h1 class="menu-item my-auto">STORY</h1>
@@ -33,10 +33,10 @@
     </nav>
    
    
-    
+   
     <section class="container text-white mt-5 ">
-        <div class="row my-5 py-5">
-            <div class="col-md-7">
+        <div class="row my-5 py-5 cart-box">
+            <div class="col-md-8">
                 <div class="d-flex justify-content-between">
                     <h1 class=" subtitle text-uppercase text-white">
                         Shopping Cart
@@ -51,13 +51,15 @@
                             <p class="muted">Shirt 1</p>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <p>➕</p>
-                            <p>1</p>
+                           
+                           
                             <p>➖</p>
+                            <p>1</p>
+                            <p>➕</p>
                         </div>
                         <p>$450</p>
                         <p>✖</p>
-                        
+                       
                     </div>
                     <div class="cart-item d-flex p-3 justify-content-between align-items-center">
                         <img src="images/pant-1.png" alt="">
@@ -66,13 +68,15 @@
                             <p class="muted">Pant 1</p>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <p>➕</p>
-                            <p>1</p>
+                           
+                           
                             <p>➖</p>
+                            <p>1</p>
+                            <p>➕</p>
                         </div>
                         <p>$450</p>
                         <p>✖</p>
-                        
+                       
                     </div>
                     <div class="cart-item d-flex p-3 justify-content-between align-items-center">
                         <img src="images/shirt-2.png" alt="">
@@ -81,28 +85,55 @@
                             <p class="muted">Shirt 2</p>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <p>➕</p>
-                            <p>1</p>
+                           
+                           
                             <p>➖</p>
+                            <p>1</p>
+                            <p>➕</p>
                         </div>
                         <p>$450</p>
                         <p>✖</p>
-                        
+                       
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 bg-light"></div>
+            <div class="col-md-4">
+              <h1 class="subtitle text-white text-uppercase">Summary</h1>
+ 
+              <div class="d-flex flex-column justify-content-around h-100">
+              <p>ITEMS: 3</p>
+              <div>
+                <p>SHIPPING</p>
+                <select name="delivery" id="delivery">
+                  <option value="free" selected>Free</option>
+                  <option value="Standard">Standard 5$</option>
+                  <option value="Premium">Premium 15$</option>
+                </select>
+              </div>
+             <div>
+              <p>GIVE CODE</p>
+              <p>Enter your code</p>
+             </div>
+ 
+             <div>
+              <p>Total Price: 1350$</p>
+             </div>
+              <button class="btn btn-outline-dark text-white "><p class="text-black pt-3">CHECKOUT</p></button>
+              </div>
+             
+ 
+            </div>
         </div>
-        
-        
-        
+       
+       
+       
     </section>
-
+ 
     <div class="loader-wrapper">
         <span class="loader"><img src="images/Vanilla-12s-280px.svg" alt="Loading"><div class="text-white text-center w-100"></div></span>
       </div>
-    
-
+   
+ 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -119,8 +150,9 @@
      $(".loader-wrapper").fadeOut("slow");
      $("body").fadeIn("slow");
      $("body").removeClass("loading");
-
+ 
   }, 1000));
     </script>
   </body>
 </html>
+ 
