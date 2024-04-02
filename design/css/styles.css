@@ -57,11 +57,24 @@
 }
 
 .cart-box{
-  background-color: #4d4d4d;
+  background-color: #e1e1e1;
   border-radius: 1%;
   color: black;
 }
 
+.cart-box .title{
+  color: #000000;
+}
+
+.cart-box  button{
+  background-color: #1b1b1b;
+  transition: all .5s;
+  border: 1px solid white;
+  font-size: smaller;
+}
+.cart-box  button:hover{
+  background-color: #000000;
+}
 .loader-wrapper {
   width: 100vw;
   height: 100vh;
@@ -83,9 +96,13 @@
 
 }
 .cart-item{
-  border-top: 1px white solid;
-  border-bottom: 1px white solid;
-  background-color: #888;
+  border: 1px black solid;
+  background-color: #f3f3f3;
+  transition: .2s ease-out;
+
+}
+.cart-item:hover{
+  transform: scale(1.05);
 }
 .cart-item img{
   width: 100px;
